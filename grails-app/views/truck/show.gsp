@@ -34,11 +34,11 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${truckInstance?.name}">
+				<g:if test="${truckInstance?.licensePlate}">
 				<li class="fieldcontain">
-					<span id="name-label" class="property-label"><g:message code="truck.name.label" default="Name" /></span>
+					<span id="licensePlate-label" class="property-label"><g:message code="truck.licensePlate.label" default="License Plate" /></span>
 					
-						<span class="property-value" aria-labelledby="name-label"><g:fieldValue bean="${truckInstance}" field="name"/></span>
+						<span class="property-value" aria-labelledby="licensePlate-label"><g:fieldValue bean="${truckInstance}" field="licensePlate"/></span>
 					
 				</li>
 				</g:if>

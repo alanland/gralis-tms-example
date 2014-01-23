@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list driver">
 			
+				<g:if test="${driverInstance?.drivingLicenseNo}">
+				<li class="fieldcontain">
+					<span id="drivingLicenseNo-label" class="property-label"><g:message code="driver.drivingLicenseNo.label" default="Driving License No" /></span>
+					
+						<span class="property-value" aria-labelledby="drivingLicenseNo-label"><g:fieldValue bean="${driverInstance}" field="drivingLicenseNo"/></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${driverInstance?.name}">
 				<li class="fieldcontain">
 					<span id="name-label" class="property-label"><g:message code="driver.name.label" default="Name" /></span>

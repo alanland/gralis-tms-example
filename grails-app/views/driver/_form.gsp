@@ -2,6 +2,14 @@
 
 
 
+<div class="fieldcontain ${hasErrors(bean: driverInstance, field: 'drivingLicenseNo', 'error')} ">
+	<label for="drivingLicenseNo">
+		<g:message code="driver.drivingLicenseNo.label" default="Driving License No" />
+		
+	</label>
+	<g:textField name="drivingLicenseNo" value="${driverInstance?.drivingLicenseNo}"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: driverInstance, field: 'name', 'error')} ">
 	<label for="name">
 		<g:message code="driver.name.label" default="Name" />

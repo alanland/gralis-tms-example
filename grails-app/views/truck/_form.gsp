@@ -10,11 +10,11 @@
 	
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: truckInstance, field: 'name', 'error')} ">
-	<label for="name">
-		<g:message code="truck.name.label" default="Name" />
+<div class="fieldcontain ${hasErrors(bean: truckInstance, field: 'licensePlate', 'error')} ">
+	<label for="licensePlate">
+		<g:message code="truck.licensePlate.label" default="License Plate" />
 		
 	</label>
-	<g:textField name="name" value="${truckInstance?.name}"/>
+	<g:textField name="licensePlate" value="${truckInstance?.licensePlate}"/>
 </div>
 

@@ -24,7 +24,7 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="name" title="${message(code: 'truck.name.label', default: 'Name')}" />
+						<g:sortableColumn property="licensePlate" title="${message(code: 'truck.licensePlate.label', default: 'License Plate')}" />
 					
 					</tr>
 				</thead>
@@ -32,7 +32,7 @@
 				<g:each in="${truckInstanceList}" status="i" var="truckInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${truckInstance.id}">${fieldValue(bean: truckInstance, field: "name")}</g:link></td>
+						<td><g:link action="show" id="${truckInstance.id}">${fieldValue(bean: truckInstance, field: "licensePlate")}</g:link></td>
 					
 					</tr>
 				</g:each>
