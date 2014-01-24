@@ -3,8 +3,8 @@ package tms.example
 class Truck {
 
     String licensePlate
-    static hasMany = [drivers: Driver]
-    static belongsTo = [Driver]
+//    static hasMany = [drivers: Driver]
+//    static belongsTo = [Driver]
     static constraints = {
     }
 
